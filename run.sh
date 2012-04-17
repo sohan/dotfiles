@@ -2,8 +2,8 @@
 current_dir=`pwd`
 
 #set up vim
-cp "$current_dir"/.vimrc ~/.vimrc
-cp -r "$current_dir"/.vim ~/.vim
+cp "$current_dir"/vim/.vimrc ~/.vimrc
+cp -r "$current_dir"/vim/.vim ~/.vim
 
 #set up python
 cp "$current_dir"/python/.pythonrc ~/.pythonrc
