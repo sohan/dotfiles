@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/sohan/Programming/moat/tagadmin/frontend/frontend/templates'
+let g:netrw_dirhist_2='/Users/sohan/.vim/ftplugin/python/pyflakes'
+let g:netrw_dirhist_3='/Users/sohan/Programming/moat/moat/search'
+let g:netrw_dirhist_4='/Users/sohan/Programming/moat/moat/search/tasks'
+let g:netrw_dirhist_5='/Users/sohan/Programming/moat/moat/search/web-backend/app/views'
+let g:netrw_dirhist_6='/Users/sohan/Programming/Awesome-Possums/static'
+let g:netrw_dirhist_7='/Users/sohan/Programming/Awesome-Possums/server'
