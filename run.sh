@@ -8,6 +8,10 @@ cp -r "$current_dir"/.vim ~/.vim
 #set up python
 cp "$current_dir"/python/.pythonrc ~/.pythonrc
 
+#set up screen
+cp "$current_dir"/screen/.screenrc ~/.screenrc
+
+
 #add to bashrc
 cat "$current_dir"/bash/.bashrc >> ~/.bashrc
 
