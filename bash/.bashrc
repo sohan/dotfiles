@@ -1,2 +1,2 @@
-export PYTHONSTARTUP='~/.pythonrc'
+export PYTHONSTARTUP=~/.pythonrc
 export EDITOR=vim
