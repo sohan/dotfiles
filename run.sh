@@ -4,6 +4,8 @@ current_dir=`pwd`
 
 #set up vim
 cp "$current_dir"/vim/.vimrc "$HOME"/.vimrc
+#remove old .vim
+rm -r "$HOME"/.vim/
 cp -r "$current_dir"/vim/.vim "$HOME"/.vim
 
 #set up ctags

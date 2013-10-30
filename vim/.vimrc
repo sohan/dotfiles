@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 syntax on
 filetype indent on
 filetype plugin indent on
@@ -39,3 +41,32 @@ endif
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
+set tags=./tags,../.git/tags,.git/tags,../../.git/tags,../../../.git/tags,../../../../.git/tags
+"open ctag in new vsplit
+map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+":inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+"set dictionary="/usr/dict/words"
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let mapleader=","
+nnoremap <leader>. :CtrlPBuffer<cr>
+let g:ctrlp_working_path_mode = 0
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn|node_modules|scratch|fixtures|env)$'
+
+"jedi don't show docstring window
+autocmd FileType python setlocal completeopt-=preview
+let g:jedi#usages_command = 0
+
+"line wraps
+noremap  <buffer> <silent> k gk
+noremap  <buffer> <silent> j gj   
