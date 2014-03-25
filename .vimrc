@@ -3,7 +3,6 @@ execute pathogen#infect()
 syntax on
 filetype indent on
 filetype plugin indent on
-set nu
 set ic
 set smartindent
 set shiftwidth=4
@@ -38,6 +37,9 @@ if has("gui_running")
   highlight SpellBad term=underline gui=undercurl guisp=Orange 
 endif 
 
+au BufNewFile,BufRead *.less set filetype=less
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=html syntax=handlebars
+
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
@@ -70,3 +72,6 @@ let g:jedi#usages_command = 0
 "line wraps
 noremap  <buffer> <silent> k gk
 noremap  <buffer> <silent> j gj   
+
+"NERDtree is ctrl d
+nmap <silent> <C-D> :NERDTreeToggle<CR>
