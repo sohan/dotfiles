@@ -1,0 +1,41 @@
+{
+	"auto_complete": true,
+	"auto_complete_selector": "source, text",
+	"color_scheme": "Packages/User/Monokai (SL) (Flake8Lint).tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.un~",
+		"*.swp",
+		"*.pyc",
+		".DS_STORE"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		"node_modules",
+		"bower_components",
+		"_build",
+		"build",
+		".test",
+		".pex",
+		".pants.d",
+		".virtualenv",
+		".tmp",
+		"__clientTemp"
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Package Control",
+		"Vintage"
+	],
+	"soda_folder_icons": false,
+	"tab_size": 2,
+	"tern_argument_completion": false,
+	"tern_argument_hints": false,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintageous_use_ctrl_keys": true
+}

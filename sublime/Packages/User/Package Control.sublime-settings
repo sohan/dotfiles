@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Package Control"
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Color Highlighter",
+		"DocBlockr",
+		"HTML Mustache",
+		"LESS",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
+		"TernJS",
+		"Theme - Soda",
+		"ThriftSyntax",
+		"TrailingSpaces",
+		"Vintageous"
+	]
+}

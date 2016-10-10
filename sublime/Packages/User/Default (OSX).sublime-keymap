@@ -1,0 +1,18 @@
+[
+  {"keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
+  {"keys": ["super+v"], "command": "paste_and_indent"},
+  {"keys": ["super+shift+v"], "command": "paste"},
+  { "keys": ["super+shift+r"], "command": "reveal_in_side_bar"},
+  {"keys": ["ctrl+o"], "command": "jump_back"},
+  { "keys": ["ctrl+i"], "command": "jump_forward"},
+  { "keys": ["super+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["super+b"], "command": "ternjs_jump_to_definition" },
+  {
+      "keys": ["j", "j"],
+      "command": "_enter_normal_mode",
+      "args": {
+          "mode": "mode_insert"
+      },
+      "context": [{"key": "vi_insert_mode_aware"}]
+  }
+]
