@@ -75,3 +75,9 @@ noremap  <buffer> <silent> j gj
 
 "NERDtree is ctrl d
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+" trim whitespace
+autocmd BufWritePre *.js,*.py :%s/\s\+$//e
+
+" hit jj twice for ESC
+inoremap jj <ESC>
